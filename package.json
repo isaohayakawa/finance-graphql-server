@@ -1,0 +1,26 @@
+{
+  "name": "finance-graphql-server",
+  "version": "0.1.0",
+  "description": "GraphQL server written in Node.js that fetches financial data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaohayakawa/finance-graphql-server.git"
+  },
+  "author": "Isao Hayakawa <isao.a.hayakawa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaohayakawa/finance-graphql-server/issues"
+  },
+  "homepage": "https://github.com/isaohayakawa/finance-graphql-server#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.3.0",
+    "node-fetch": "^2.6.7"
+  }
+}
