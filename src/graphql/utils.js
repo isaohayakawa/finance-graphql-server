@@ -4,7 +4,7 @@ async function getCompanyData(ticker) {
     const res = await fetch(`https://yfapi.net/v6/finance/quote?symbols=${ticker}`, {
         method: 'get',
         headers: {
-            'x-api-key': '0BWqCoY9mr33pys0d7T2lopgAsf23V2nO1iSGgb0'
+            'x-api-key': ''
         }
     })
     const data = await res.json()
