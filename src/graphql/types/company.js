@@ -1,10 +1,9 @@
-const {
+import {
     GraphQLObjectType,
     GraphQLString
-} = require('graphql');
-const { PriceHistoryType } = require('./priceHistory')
-
-const { getPriceHistory } = require('../utils')
+} from 'graphql'
+import { PriceHistoryType } from './priceHistory.js'
+import { getPriceHistory } from '../utils.js'
 
 const CompanyType = new GraphQLObjectType({
     name: 'Company',
@@ -34,6 +33,6 @@ const CompanyType = new GraphQLObjectType({
     },
 })
 
-module.exports = {
+export {
     CompanyType,
 }

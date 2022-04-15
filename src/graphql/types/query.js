@@ -1,9 +1,9 @@
-const {
+import {
     GraphQLObjectType,
     GraphQLString
-} = require('graphql');
-const { CompanyType } = require('./company')
-const { getCompanyData } = require('../utils')
+} from 'graphql'
+import { CompanyType } from './company.js'
+import { getCompanyData } from '../utils.js'
 
 const QueryType = new GraphQLObjectType({
     name: 'QueryType',
@@ -23,6 +23,6 @@ const QueryType = new GraphQLObjectType({
     }
 })
 
-module.exports = {
+export {
     QueryType,
 }

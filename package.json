@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "GraphQL server written in Node.js that fetches financial data",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +16,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/isaohayakawa/finance-graphql-server/issues"
+  },
+  "engines" : { 
+    "node" : ">=16.14.2"
   },
   "homepage": "https://github.com/isaohayakawa/finance-graphql-server#readme",
   "dependencies": {

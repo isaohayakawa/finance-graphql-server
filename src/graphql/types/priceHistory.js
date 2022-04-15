@@ -1,9 +1,9 @@
-const {
+import {
     GraphQLObjectType,
     GraphQLList,
     GraphQLInt,
     GraphQLFloat,
-} = require('graphql');
+} from 'graphql'
 
 const PriceHistoryType = new GraphQLObjectType({
     name: 'PriceHistory1Yr',
@@ -20,6 +20,6 @@ const PriceHistoryType = new GraphQLObjectType({
     }
 })
 
-module.exports = {
+export {
     PriceHistoryType,
 }

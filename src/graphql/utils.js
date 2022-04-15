@@ -1,5 +1,5 @@
-const fetch = require('node-fetch')
-const moment = require('moment')
+import fetch from 'node-fetch'
+import moment from 'moment'
 
 const companyDataMap = {}
 
@@ -64,7 +64,7 @@ async function getPriceHistory(ticker) {
     return result
 }
 
-module.exports = {
+export {
     getCompanyData,
     getPriceHistory,
 }

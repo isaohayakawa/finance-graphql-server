@@ -1,17 +1,9 @@
-const {
-    GraphQLSchema,
-    GraphQLObjectType,
-    GraphQLString
-} = require('graphql');
-const { CompanyType } = require('./types/company')
-const { QueryType } = require('./types/query')
-const { getCompanyData } = require('./utils')
+import { GraphQLSchema } from 'graphql'
+import { QueryType } from './types/query.js'
 
 const schema = new GraphQLSchema({
     query: QueryType,
     description: 'root query type'
 })
 
-module.exports = {
-    schema,
-}
+export { schema }
