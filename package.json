@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "lint": "eslint src/** --fix",
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +18,8 @@
   "bugs": {
     "url": "https://github.com/isaohayakawa/finance-graphql-server/issues"
   },
-  "engines" : { 
-    "node" : ">=16.14.2"
+  "engines": {
+    "node": ">=16.14.2"
   },
   "homepage": "https://github.com/isaohayakawa/finance-graphql-server#readme",
   "dependencies": {
@@ -27,5 +28,8 @@
     "graphql": "^16.3.0",
     "moment": "^2.29.2",
     "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0"
   }
 }
